@@ -1,0 +1,94 @@
+.hero {
+  width: 80%;
+  margin: 50px auto -70px;
+  display: flex;
+  padding-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px; /* spacing between text and image */
+}
+
+.hero-left {
+  flex: 1;
+  padding: 30px;
+}
+
+.hero-content {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-top: 12px;
+  color: #333;
+}
+
+.hero-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+#nature1 {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ----------- MEDIA QUERIES ----------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .hero {
+    width: 90%;
+    gap: 20px;
+  }
+
+  .hero-left {
+    padding: 20px;
+    margin-top: -20px;
+
+  }
+
+  .hero-content {
+    font-size: 16px;
+  }
+
+  #nature1 {
+    max-width: 400px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column-reverse; /* stack image below text */
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  .hero-left {
+    padding: 10px;
+  }
+
+  .hero-content {
+    font-size: 15px;
+  }
+
+  #nature1 {
+    width: 100%;
+    max-width: 400px;
+    margin-top: 25px; /* ✅ adds space above image */
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .hero-content {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  #nature1 {
+    max-width: 280px;
+    margin-top: 20px; /* ✅ keeps spacing consistent */
+  }
+}

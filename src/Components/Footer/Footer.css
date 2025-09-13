@@ -1,0 +1,123 @@
+/* ===== Footer Top Section ===== */
+.footer-top-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px 8%;
+  background: #000;
+  color: #fff;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-left,
+.footer-right,
+.socials {
+  flex: 1;
+  margin: 10px;
+}
+
+.footer-left h2 {
+  margin: 5px 0;
+  font-size: 20px;
+}
+
+.footer-left .contact,
+.footer-right .contact {
+  color: #2e7d32;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.footer-left .contact:hover,
+.footer-right .contact:hover {
+  text-decoration: underline;
+}
+
+/* ===== Social Icons ===== */
+.socials img {
+  width: 26px;
+  margin: 5px;
+  cursor: pointer;
+  filter: brightness(0) invert(1);
+  transition: transform 0.2s;
+}
+
+.socials img:hover {
+  transform: scale(1.15);
+}
+
+/* ===== Footer Bottom Section ===== */
+.footer-bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background: #000;
+  color: #fff;
+  font-size: 13px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.footer-bottom-wrapper img {
+  height: 35px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.footer-links p {
+  cursor: pointer;
+  margin: 0;
+}
+
+.footer-links p:hover {
+  text-decoration: underline;
+  color: #2e7d32;
+}
+
+/* ===== Mobile View ===== */
+@media (max-width: 768px) {
+  .footer-top-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    padding: 15px 5%;
+  }
+
+  .footer-left h2 {
+    font-size: 18px;
+  }
+
+  .footer-bottom-wrapper {
+    display: flex;
+    /* flex-direction: column; */
+    gap: 10px;
+    padding: 10px 5%;
+    font-size: 12px;
+  }
+
+  .footer-links {
+    /* flex-direction: column; */
+    gap: 25px;
+    display: flex;
+    margin-right: 30px;
+  }
+
+  .footer-divider {
+    height: 1px;
+    margin: 0px 0;
+    margin-top: -10px;
+  }
+}
+
+/* ===== Ensure Body Matches Background ===== */
+/* footer-top-wrapper {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+} */

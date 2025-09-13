@@ -1,0 +1,320 @@
+.carousel {
+  max-width: 70%;
+  position: relative;
+  /* margin: 30px auto ;  */
+  margin-left: 15%;
+  margin-top: 7%;
+}
+
+.slider {
+  overflow: hidden;
+  width: 100%;
+}
+
+.slides-container {
+  display: flex;
+  width: 300%;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  width: 33.333%;
+  flex-shrink: 0;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+  padding: 30px;
+  border-radius: 10px;
+  color: #333;
+  line-height: 1.4;
+  background: #fff;
+  box-sizing: border-box;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: auto;
+}
+
+/* Background overlay for slides */
+.slide::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/green-field-1.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.4;
+  z-index: 0;
+}
+
+/* Ensure content stays above background */
+.slide-content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Slide 1 */
+.slide-1 .slide-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.slide-1 .slide-img {
+  max-width: 50%;
+  width: 300px;
+  border-radius: 55px;
+}
+
+.slide-1 .slide-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.slide-1 .slide-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  line-height: 1.3;
+}
+
+.slide-1 .slide-text p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Slide 2 */
+.slide-2 .slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.slide-2 .slide-img {
+  align-self: center;
+  max-width: 250px;
+  width: 200px;
+  height: auto;
+}
+
+.slide-2 p {
+  margin: 0;
+  max-width: 600px;
+}
+
+.slide-2 blockquote {
+  margin: 0;
+  max-width: 500px;
+}
+
+/* Slide 3 */
+.slide-3 .slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+.slide-3 h2 {
+  margin: 0;
+}
+
+.slide-3 p {
+  margin: 0;
+  max-width: 600px;
+}
+
+/* Generic slide elements */
+.slide-img {
+  width: 280px;
+  max-width: 45%;
+  border-radius: 10px;
+  border: 2px solid #6ec007;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.slide-text {
+  flex: 1;
+  min-width: 250px;
+}
+
+.slide-text h2 {
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+.slide-text p {
+  margin: 0 0 15px 0;
+  line-height: 1.6;
+}
+
+.slide-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #6ec007;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.slide-btn:hover {
+  background: #5aa306;
+}
+
+blockquote {
+  margin: 15px 0;
+  font-style: italic;
+  color: #555;
+  border-left: 4px solid #6ec007;
+  padding-left: 15px;
+}
+
+/* Navigation buttons */
+.back-btn,
+.next-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%;
+  background:#5aa306;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  padding: 10px;
+  margin-left: -80px;
+  margin-right: -80px;
+}
+
+.back-btn:hover,
+.next-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-50%) scale(1.05);
+}
+
+.back-btn {
+  left: 20px;
+}
+
+.next-btn {
+  right: 20px;
+}
+
+/* Slide indicators */
+.slide-indicators {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #ddd;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.indicator:hover {
+  background: #bbb;
+}
+
+.indicator.active {
+  background: #6ec007;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .carousel {
+    padding: 0 15px;
+    margin: 80px auto -50px;
+  }
+
+  .slide {
+    padding: 20px;
+  }
+
+  .slide-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .slide-img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  .slide-text {
+    min-width: auto;
+  }
+
+  /* ✅ Keep nav buttons round and visible */
+  .back-btn,
+  .next-btn {
+    width: 45px;
+    height: 45px;
+    min-width: 45px;
+    min-height: 45px;
+    font-size: 1.2rem;
+  }
+
+  .back-btn {
+    left: 10px;
+  }
+
+  .next-btn {
+    right: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .slide {
+    padding: 15px;
+  }
+
+  .slide-content {
+    gap: 12px;
+    width: 100%;
+  }
+
+  .slide-img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ✅ Smaller but still round buttons */
+  .back-btn,
+  .next-btn {
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    font-size: 1rem;
+  }
+}

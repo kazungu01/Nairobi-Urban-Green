@@ -1,0 +1,124 @@
+.achievements-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 10%;
+  background: #2e6b2e;
+  position: relative;
+  overflow: hidden;
+  width: 85%;
+  /* margin: -60px 0 50px 7.5%; */
+  margin-top: 5%;
+  margin-left: 10%;
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.container-left {
+  flex: 1;
+  max-width: 40%;
+  margin-top: 30px;
+}
+
+.container-left h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.container-left p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.more-btn {
+  padding: 12px 24px;
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 50px;
+}
+
+.more-btn:hover {
+  background: #333;
+}
+
+.container-right {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.achievement-box {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  flex: 1;
+  text-align: center;
+}
+
+.achievement-box h1 {
+  font-size: 2.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.achievement-box h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.achievement-box p {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Mobile-specific button wrapper */
+.more-btn-mobile {
+  display: none; /* hidden on desktop */
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .achievements-wrapper {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 8%;
+    margin-top: 70px;
+  }
+
+  .container-left {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-left .more-btn {
+    display: none; /* hide the desktop button */
+  }
+
+  .container-right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .more-btn-mobile {
+    display: block; /* show mobile button */
+  }
+}
