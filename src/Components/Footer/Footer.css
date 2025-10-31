@@ -90,7 +90,7 @@
   }
 
   .footer-left h2 {
-    font-size: 18px;
+    font-size: 15px;
   }
 
   .footer-bottom-wrapper {
@@ -113,6 +113,15 @@
     margin: 0px 0;
     margin-top: -10px;
   }
+
+  .footer-left .contact{
+    font-size: 13px;
+    margin-left: -30px;
+
+}
+
+
+
 }
 
 /* ===== Ensure Body Matches Background ===== */

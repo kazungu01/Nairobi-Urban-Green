@@ -1,0 +1,173 @@
+.donate {
+  width: 80%;
+  margin: 8% auto;
+  padding: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  color: #2d3748;
+}
+
+.donate-container {
+  background-color: #fff;
+}
+
+/* Headings */
+.donate h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3F6F4F;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.donate h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+  color: #2e5c1e;
+  margin-bottom: 20px;
+}
+
+/* Paragraph styling - now centered */
+.donate p {
+  font-size: 1rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #4a5568;
+  margin: 0 auto 25px auto;
+  max-width: 800px;
+}
+
+/* Donation content layout */
+.donate > div:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 50px;
+  flex-wrap: wrap;
+}
+
+/* Left image */
+.donate-img {
+  flex: 1;
+  height: 500px;
+  background: url('../../assets/donate-image.png') center/cover no-repeat;
+  min-width: 300px;
+  margin-top: 5%;
+}
+
+/* Right form area */
+.donate-right {
+  flex: 1;
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 10px;
+  min-width: 300px;
+}
+
+.donate-right h3 {
+  color: #3F6F4F;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+/* Form styling */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #2e5c1e;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  background-color: #fff;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+}
+
+/* Full-width field (textarea) */
+.full-width {
+  margin-bottom: 20px;
+}
+
+/* Submit button */
+.submit-btn {
+  background-color: #2e5c1e;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #234718;
+}
+
+/* Result message styling */
+.result-message {
+  display: block;
+  margin-top: 15px;
+  text-align: center;
+  color: #2e5c1e;
+  font-weight: 500;
+}
+/* Center the ul and its bullets properly */
+ul {
+  display: table; /* Helps keep the bullets with the text */
+  margin: 0 auto; /* Centers the entire list block */
+  margin-top: -30px;
+  padding: 0;
+  text-align: left; /* Keeps list item text aligned neatly */
+  list-style-position: inside;
+}
+
+ul li {
+  margin: 6px 0; 
+  line-height: 1.5;
+}
+
+/* Reduce overall text spacing */
+body, 
+.contact-container-left h3, 
+.contact-container-right h1, 
+.contact-container-right p, 
+label, 
+input, 
+textarea {
+  line-height: 1.3; /* Slightly tighter line spacing */
+  letter-spacing: 0.3px; /* Brings letters closer together */
+}
+
+/* Optional: slightly reduce paragraph margins */
+p {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,35 @@
+.blog-detail {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.blog-detail-img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.blog-detail h2 {
+  margin-bottom: 20px;
+  color: #2c7a7b;
+}
+
+.blog-detail p {
+  line-height: 1.6;
+  margin-bottom: 15px;
+  white-space: pre-line; /* preserves line breaks in blog content */
+}
+
+.back-link {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2c7a7b;
+  font-weight: bold;
+  text-decoration: none;
+}
+.back-link:hover {
+  text-decoration: underline;
+}

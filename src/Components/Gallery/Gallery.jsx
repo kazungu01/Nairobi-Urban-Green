@@ -1,5 +1,4 @@
 import React from 'react'
-import Footer from '../Footer/Footer';
 import './Gallery.css'
 import gallery_1 from '../../assets/gallery-1.jpg';
 import gallery_2 from '../../assets/gallery-2.jpg';
@@ -48,7 +47,6 @@ const Gallery = () => {
             <img src={gallery_1} alt="" />
             <img src={gallery_5} alt="" />
         </div>
-        < Footer/>
     </div>
     
   )

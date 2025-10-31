@@ -1,0 +1,263 @@
+.about {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 10%;
+  padding: 25px;
+}
+
+/* Banner */
+.about-banner {
+  background: url('../../assets/summer-field.jpg') center/cover no-repeat;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.about-banner h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-banner h3 {
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+/* About Body */
+.about-body {
+  width: 80%;
+  margin: 30px auto;
+  /* text-align: left; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+  /* line-height: 1.6; */
+  /* color: #2d3748; */
+}
+
+/* Section headings, styled like contact */
+.about-body h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #3F6F4F;   /* same green as contact headings */
+  /* margin-bottom: 20px; */
+  text-align: center;
+}
+
+/* Paragraphs */
+.about-body p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+  color: #4a5568;
+}
+
+.mission-vision-approach {
+  background-color: #2e5c1e; /* dark green background */
+  width:150%;
+  margin-left: -25%;
+  padding: 60px 10%;
+  text-align: center;
+  color: white;
+}
+
+.mission-vision-approach h2 {
+  font-size: 2.1rem;
+  margin-bottom: 40px;
+  /* font-weight: bold; */
+}
+
+.mva-cards {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: nowrap; /* ensures all 3 stay in one row */
+}
+
+.mva-card {
+  flex: 1; /* makes them equal width */
+  min-width: 0; /* prevents flex overflow */
+  max-width: 400px;
+  /* padding: 10px; */
+}
+
+.mva-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.mva-card p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #f1f1f1;
+}
+
+.core-values {
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  width: 120%;
+  margin-left: -8%;
+}
+
+.core-values-container {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.core-values-left {
+  flex: 1;
+}
+
+.core-values-left h2, .milestones-right h2{
+  color: #3F6F4F;
+  margin-bottom: 20px;
+  font-size: 28px;
+  text-align: left;
+  font-weight: bold;
+}
+
+.core-values-left ul {
+  list-style-type: disc;
+  line-height: 1.2;
+  color: #333;
+}
+
+
+.core-values-right {
+  flex: 1;
+  text-align: center;
+}
+
+.core-values-right img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Milestones Section */
+.milestones {
+  width: 150%;
+  margin-left: -10%;
+  display: flex;
+  /* gap: 10px; */
+  align-items: flex-start;
+  max-width: 1200px;
+  padding: 40px 20px;
+}
+
+.milestones-left {
+  flex: 2;  /* make image side bigger */
+  max-width: 600px; /* optional, controls how big it can grow */
+}
+
+.milestones-left img {
+  width: 400px;
+  height: 450px;
+  border-radius: 8px;
+  margin-top: 10%; 
+}
+
+.milestones-right {
+  flex: 1;  /* make text side smaller */
+  /* max-width: 700px; */
+  margin-left: -10%;
+}
+
+.team-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.team-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #2d3748;
+  margin-bottom: 50px;
+}
+
+.team-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: -20px;
+}
+
+.Member-1,
+.Member-2,
+.Member-3,
+.Member-4 {
+  flex: 2;
+  min-width: 300px;
+  background: #f8fafc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  text-align: center;
+}
+
+.Member-1 img,
+.Member-2 img,
+.Member-3 img,
+.Member-4 img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.Member-1 h3,
+.Member-2 h3,
+.Member-3 h3,
+.Member-4 h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #3F6F4F;
+  margin-bottom: 8px;
+}
+
+.Member-1 h4,
+.Member-2 h4,
+.Member-3 h4,
+.Member-4 h4 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #718096;
+  margin-bottom: 20px;
+}
+
+.Member-1 p,
+.Member-2 p,
+.Member-3 p,
+.Member-4 p {
+  color: #2a313d;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.Member-1 ul {
+  margin: 15px 0;
+  padding-left: 20px;
+  margin-top: -10px;
+}
+
+.Member-1 ul li {
+  color: #4a5568;
+  line-height: 1.6;
+  margin-bottom: -10px;
+}
+.donate-conatiner{
+  background-color: #fff;
+}

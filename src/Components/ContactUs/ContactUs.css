@@ -1,0 +1,114 @@
+* {
+      font-family: Arial, sans-serif;  
+}
+
+.contact-container{
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    margin-left: 10%;
+    /* background-color: #fff; */
+}
+.contact-container-left {
+  width: 50%;
+  margin: 40px auto;
+  text-align: left;
+}
+
+.contact-container-right{
+      width: 50%;
+      margin: 70px auto;
+      text-align: center;
+}
+
+.contact-banner{
+    padding: 50px;
+    margin-top: 5%;
+    background-image: url('../../assets/summer-field.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* opacity: 0.6; */
+    text-align: center;
+    height: 200px;
+    /* color: #fff; */
+}
+
+.contact-container-left h3 {
+  margin-bottom: 20px;
+  text-align: center;
+  /* font-size: 16px; */
+  line-height: 1.5;
+}
+
+.contact-container-left h3, .contact-container-right h1{
+margin-bottom: 20px;
+color: #3F6F4F   ;
+font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+.contact-container-right p{
+    line-height: 27px;
+}
+
+.contact-container-right img{
+    width: 25%;
+    /* height: 35%; */
+    border-radius: 20%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4caf50;
+}
+
+.full-width {
+  margin-bottom: 20px;
+}
+
+.submit-btn {
+  background-color: #2e5c1e;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  align-self: center;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #234718;
+}

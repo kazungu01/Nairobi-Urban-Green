@@ -11,28 +11,19 @@ import Team from './Components/Team/Team';
 import FAQ from './Components/FAQ/Faq';
 import Invitation from './Components/Invitation/Invitation';
 import Footer from './Components/Footer/Footer';
+import Blog from './Components/Blog/Blog';
+import BlogDetail from './Components/BlogDetail/BlogDetail';
+import ContactUs from './Components/ContactUs/ContactUs';
+import About from './Components/About/About';
+import Donate from './Components/Donate/Donate';
 
 
 const App = () => {
   return (
     <Router>
-      {/* Navbar stays visible on all pages */}
       <Navbar />
-
-      {/* Links for navigation (you can also put these inside Navbar.jsx) */}
-      {/* <nav>
-        <Link to="/">Home</Link>
-        <Link to="/blog">Blog</Link>
-        <Link to="/gallery">Gallery</Link>
-        <Link to="/about">About</Link>
-        <Link to="/about">About</Link>
-      </nav> */}
-
-      {/* Routes decide which component to show */}
       <Routes>
-        <Route
-          path="/"
-          element={
+        <Route path="/" element={
             <>
               <Hero />
               <Carousel /> 
@@ -40,14 +31,17 @@ const App = () => {
               <Team/>
               <FAQ/>
               <Invitation/>
-              <Footer/>
-
             </>
           }
         />
         <Route path="/gallery" element={<Gallery />} />
-        {/* <Route path="/about" element={<About />} /> */}
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/about-us" element={<About />} />
+        <Route path="/contact-us" element={<ContactUs />} />
+        <Route path="/donate" element={<Donate />} />
       </Routes>
+      <Footer />
     </Router>
 
 

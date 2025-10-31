@@ -84,7 +84,7 @@ const Carousel = () => {
                 className="slide-img"
               />
               <div className="slide-text">
-                <h2>🌍 Together, We Can Transform Cities into Greener, Healthier, and More Sustainable Spaces</h2>
+                <h2>Together, We Can Transform Cities into Greener, Healthier, and More Sustainable Spaces</h2>
                 <p>
                     At Nairobi Urban Green, we turn household waste into life — growing food, 
                     planting trees, and empowering communities to create greener, healthier cities. <br />
@@ -114,7 +114,7 @@ const Carousel = () => {
 
           <div className="slide slide-3">
             <div className="slide-content">
-              <h2>🌿 Greening Cities, Growing Communities</h2>
+              <h2>Greening Cities, Growing Communities</h2>
               <p>
                At Nairobi Urban Green, we believe that transforming urban spaces starts with empowering the people who live in them. 
                By turning domestic waste and leftovers into life-sustaining resources, 

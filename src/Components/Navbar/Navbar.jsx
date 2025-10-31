@@ -30,8 +30,10 @@ const Navbar = () => {
         <a href="contact-us"><li>Contact Us</li></a>
         <a href="/gallery"><li>Gallery</li></a>
         <li>
-          <button className="btn">Donate</button>
-        </li>
+  <a href="/donate">
+    <button className="btn">Donate</button>
+  </a>
+</li>
       </ul>
     </nav>
   );

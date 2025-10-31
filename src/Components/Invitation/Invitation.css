@@ -27,6 +27,9 @@ list-style: circle;
 margin-top: 20px;
 }
 
+.invitation-right ul {
+ margin-top: 0px;
+}
 .contact-us-btn{
   background-color: #48bb78;
   color: white;
@@ -37,7 +40,8 @@ margin-top: 20px;
   cursor: pointer;
   margin-top: 20px;
   transition: background-color 0.3s ease;
-
+  /* margin-right: 50px; */
+    /* align-items: center; */
 }
 .contact-us-btn:hover{
     background-color: #38a169;
