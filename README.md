@@ -1,16 +1,125 @@
-<<<<<<< HEAD
-# Nairobi-Urban-Green
-=======
-# React + Vite
+**Nairobi Urban Green – Frontend**
+Nairobi Urban Green is a community driven platform focused on promoting urban farming, sustainability, and education within Nairobi.
+This frontend is built using React, designed to be fast, responsive, and easy to integrate with a Rails backend API.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Features**
 
-Currently, two official plugins are available:
+Beautiful, responsive UI for all pages
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Blog listing page
 
-## Expanding the ESLint configuration
+Single blog article page
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> a20c74e (first commit)
+Donate page with pledge form
+
+About Us and Contact pages
+
+Mobile navigation menu with sticky navbar
+
+Clean component-based structure
+
+Connects seamlessly to the Rails backend API
+
+**Tech Stack**
+React
+
+Vite
+
+React Router
+
+CSS Modules / Global CSS
+
+Axios (for communicating with the backend API)
+
+**Folder Structure**
+src/
+ ├── assets/                # Images, logos, static files
+ ├── components/            # Reusable UI components
+ │     ├── Navbar/
+ │     ├── Footer/
+ │     └── BlogCard/
+ ├── pages/                 # Each frontend page
+ │     ├── Home/
+ │     ├── Blog/
+ │     ├── BlogDetails/
+ │     ├── Donate/
+ │     ├── About/
+ │     └── Contact/
+ ├── App.jsx                # Main routing file
+ └── main.jsx               # Vite entry point
+
+**Installation and Setup**
+1. Clone the repository
+git clone https://github.com/kazungu01/Nairobi-Urban-Green-Frontend.git
+cd Nairobi-Urban-Green-Frontend
+
+2. Install dependencies
+npm install
+
+3. Start the development server
+npm run dev
+
+
+The app will run on:
+
+http://localhost:5173
+
+Connecting to the Backend (Rails API)
+
+This project interacts with the Nairobi Urban Green backend built using Rails.
+
+Set your backend URL inside an environment file.
+
+**Available Pages**
+Home
+
+Overview of Nairobi Urban Green and featured sections.
+
+Blog
+
+Displays all blog posts from the backend.
+
+Blog Details
+
+Shows a full blog article including images.
+
+Donate
+
+Contains a pledge form styled with a clean layout.
+
+Gallery
+
+Displays farm images and community activities.
+
+About Us
+
+Mission, vision, and org story.
+
+Contact
+
+Contact form and contact details.
+
+**Running a Production Build**
+npm run build
+
+
+Output files will be created in the dist/ folder.
+
+To preview production build:
+
+npm run preview
+
+**Contributing**
+
+Pull requests are welcome.
+If you want to contribute:
+
+Fork the repo
+
+Create a feature branch
+
+Submit a pull request
+
+**License**
+
+This project is licensed under the MIT License.
