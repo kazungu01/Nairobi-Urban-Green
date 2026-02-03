@@ -3,6 +3,7 @@ import './About.css'
 import Francisc_ilahaka from "../../assets/Francis-Ilahaka.jpg" 
 import Lilian_Ingato from "../../assets/Lilian-Ingato.jpg"
 import Praise_Ivanna from "../../assets/Praise-Ivanna.jpg"
+import Joseph_Kombo from "../../assets/Joseph-kombo.jpeg"
 import core_values from '../../assets/core-values.png';
 import achievements from '../../assets/achievements.png';
 
@@ -233,7 +234,7 @@ const About = () => {
             </p>   
           </div>
           <div className='team-member'>
-            <img src={Lilian_Ingato} alt="Joseph Kombo" />
+            <img src={Joseph_Kombo} alt="Joseph Kombo" />
             <h3>Joseph Kombo</h3>
             <h4>Secretary in charge of Mobilization and Organizing</h4>
             <p>
