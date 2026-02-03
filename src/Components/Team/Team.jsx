@@ -1,9 +1,11 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Team.css' 
 import Francisc_ilahaka from "../../assets/Francis-Ilahaka.jpg" 
 import Lilian_Ingato from "../../assets/Lilian-Ingato.jpg"
 
 const Team = () => {
+  const navigate = useNavigate();
   return (
     <div className="team-container">
         <h1>Some Faces Behind Our Operations</h1> 
@@ -15,13 +17,9 @@ const Team = () => {
               <p>A former <strong>arts and culture journalist</strong> who now leads groundbreaking 
                  work in <strong>urban agriculture</strong>, focusing on the use of <strong>domestic leftovers</strong> 
                  to grow organic fruits and vegetables. His expertise is supported by 
-                 international training, holding certifications in:</p>
-                 <ul>
-                  <li><strong>Nutrition, Health, and Food Safety</strong> from <strong>Wageningen University</strong></li>
-                  <li><strong>The Age of Sustainable Development</strong> from <strong>SDG Academy</strong></li>
-                 </ul>
+                 international trainings.</p>
               <p>Mr. Francis envisions urban gardens as vital to <strong>21st-century 
-                 cities</strong>—not only for food production but also for community healing, 
+                 cities</strong> and not only for food production but also for community healing, 
                  climate resilience, and environmental education.</p>   
           </div>
           
@@ -34,14 +32,11 @@ const Team = () => {
                   plants in agriculture. Her work bridges the gap between food 
                   systems and health outcomes, aiming to educate and empower 
                   students from junior levels to higher learning institutions 
-                  on the importance of nutrition in daily life. Lilian is passionate 
-                  about making nutrition science accessible, promoting healthy eating 
-                  habits, and highlighting the role of plant-based foods in preventing 
-                  disease and supporting community well-being.
+                  on the importance of nutrition in daily life.
               </p>
           </div>
         </div>
-        <button className="see-more-btn">See more</button>
+        <button className="see-more-btn" onClick={() => navigate('/about-us#team-section')}>See more</button>
     </div>
   )
 }

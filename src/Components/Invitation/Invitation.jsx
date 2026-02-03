@@ -1,7 +1,9 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import './Invitation.css'
 
 const Invitation = () => {
+  const navigate = useNavigate();
   return (
     <div className='invitation-wrapper'>
         <div className='invitation-left'>
@@ -19,7 +21,7 @@ const Invitation = () => {
                 <li>Learning & Growth</li>
                 <li>A much greener Legacy</li>
             </ul>
-            <button className='contact-us-btn'> Contact Us</button>
+            <button className='contact-us-btn' onClick={() => navigate('/contact-us')}> Contact Us</button>
         </div>
       
     </div>

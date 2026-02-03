@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Carousel.css";
 import green_field_1 from "../../assets/green-field-1.png";
 import green_field_2 from "../../assets/green-field-2.png";
@@ -9,6 +10,7 @@ import francis from "../../assets/francis.jpg"
 import Wangari_maathai from "../../assets/wangari-maathai.jpg"
 
 const Carousel = () => {
+  const navigate = useNavigate();
   const [currentIndex, setCurrentIndex] = useState(0);
   const [isAutoPlaying, setIsAutoPlaying] = useState(true);
   const totalSlides = 3;
@@ -93,7 +95,7 @@ const Carousel = () => {
                     <strong>Join us today in transforming today's cities into tomorrow's green legacy.</strong>
                 </p>
 
-                <button className="slide-btn">Learn More</button>
+                <button className="slide-btn" onClick={() => navigate('/about-us')}>Learn More</button>
               </div>
             </div>
           </div>
@@ -105,10 +107,10 @@ const Carousel = () => {
                 <strong>Wangari Maathai<br /> Nobel Peace Laureate & Environmental Activist</strong>
               </blockquote>
               <p>Drawing Inspiration from <strong>Prof. Wangari Maathai, </strong>
-              her words inspire our mission — to rise up, take action, and create greener, healthier cities. 
+              her words inspire our mission: to rise up, take action, and create greener, healthier cities. 
               Her legacy reminds us that real change begins in our communities. 
               Through urban farming, waste recovery, and seed sharing, we're helping shape a sustainable future for all generations.</p>
-              <button className="slide-btn">Get Involved</button>
+              <button className="slide-btn" onClick={() => navigate('/contact-us')}>Get Involved</button>
             </div>
           </div>
 
@@ -118,20 +120,20 @@ const Carousel = () => {
               <p>
                At Nairobi Urban Green, we believe that transforming urban spaces starts with empowering the people who live in them. 
                By turning domestic waste and leftovers into life-sustaining resources, 
-               we're making our cities greener — not just through trees and plants, but through community resilience and food security.
+               we're making our cities greener and not just through trees and plants, but through community resilience and food security.
               </p>
               <p>
                 Through our innovative urban farming programs, we grow fresh vegetables using recycled materials, 
                 produce seeds and seedlings through our community seed initiative, 
                 and distribute them freely to low-income farmers and schools. 
                 These efforts not only reduce food waste and improve access to nutritious food, 
-                but also reconnect people with nature — right in the heart of the city.
+                but also reconnect people with nature right in the heart of the city.
               </p>
               <p>
                 We're more than just an environmental initiative. We're a movement. A movement that's growing gardens, 
                 reviving traditions, creating opportunities, and most importantly — growing strong, connected communities from the ground up.             
               </p>
-              <button className="slide-btn">Join Us</button>
+              <button className="slide-btn" onClick={() => navigate('/contact-us')}>Join Us</button>
             </div>
           </div>
         </div>

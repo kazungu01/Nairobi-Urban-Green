@@ -1,5 +1,6 @@
 import React from 'react'
 import './Donate.css';
+import Swal from "sweetalert2";
 const Donate = () => {
   const [result, setResult] = React.useState("");
   
@@ -16,10 +17,22 @@ const Donate = () => {
       const data = await response.json();
   
       if (data.success) {
-        setResult("Message sent successfully!");
+        Swal.fire({
+          icon: 'success',
+          title: 'Thank You!',
+          text: 'Your donation pledge has been received. We appreciate your support!',
+          confirmButtonColor: '#28a745'
+        });
         event.target.reset();
+        setResult("");
       } else {
         console.log("Error", data);
+        Swal.fire({
+          icon: 'error',
+          title: 'Error',
+          text: data.message || 'Failed to submit pledge. Please try again.',
+          confirmButtonColor: '#dc3545'
+        });
         setResult(data.message);
       }
     };

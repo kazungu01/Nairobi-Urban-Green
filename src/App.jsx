@@ -16,6 +16,8 @@ import BlogDetail from './Components/BlogDetail/BlogDetail';
 import ContactUs from './Components/ContactUs/ContactUs';
 import About from './Components/About/About';
 import Donate from './Components/Donate/Donate';
+import AdminLogin from './Components/Admin/AdminLogin';
+import AdminBlogs from './Components/Admin/AdminBlogs';
 
 
 const App = () => {
@@ -35,11 +37,13 @@ const App = () => {
           }
         />
         <Route path="/gallery" element={<Gallery />} />
-        <Route path="/blog" element={<Blog />} />
-        <Route path="/blog/:id" element={<BlogDetail />} />
+        <Route path="/blogs" element={<Blog />} />
+        <Route path="/blogs/:id" element={<BlogDetail />} />
         <Route path="/about-us" element={<About />} />
         <Route path="/contact-us" element={<ContactUs />} />
         <Route path="/donate" element={<Donate />} />
+        <Route path="/admin/login" element={<AdminLogin />} />
+        <Route path="/admin/blogs" element={<AdminBlogs />} />
       </Routes>
       <Footer />
     </Router>

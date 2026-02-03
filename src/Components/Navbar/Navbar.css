@@ -14,6 +14,12 @@
   transition: background 0.3s, box-shadow 0.3s;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
 .logo {
   width: 80px;
   border-radius: 50%;
@@ -33,6 +39,23 @@ nav ul li {
   letter-spacing: 0.5px;
   cursor: pointer;
   position: relative;
+}
+
+.admin-icon a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  color: #2e6b2e;
+  transition: all 0.2s ease;
+}
+
+.admin-icon a:hover {
+  border-color: #6ec007;
+  background: rgba(110, 192, 7, 0.08);
 }
 
 nav ul li::after {
@@ -112,6 +135,10 @@ nav ul li:hover::after {
     background: #6ec007;
     margin: 5px;
     transition: 0.3s;
+  }
+
+  .nav-right {
+    gap: 10px;
   }
 }
 

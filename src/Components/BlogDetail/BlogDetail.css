@@ -1,6 +1,44 @@
+.blog-detail-container {
+  width: 100%;
+}
+
+.blog-detail-header {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+}
+
+.blog-detail-header-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.blog-detail-header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.blog-detail-header-overlay h1 {
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  max-width: 90%;
+}
+
 .blog-detail {
-  padding: 30px;
-  max-width: 800px;
+  padding: 50px 30px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -18,18 +56,37 @@
 }
 
 .blog-detail p {
-  line-height: 1.6;
-  margin-bottom: 15px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #333;
   white-space: pre-line; /* preserves line breaks in blog content */
+  font-size: 1rem;
 }
 
 .back-link {
   display: inline-block;
-  margin-top: 20px;
+  margin-top: 30px;
   color: #2c7a7b;
   font-weight: bold;
   text-decoration: none;
+  transition: color 0.3s ease;
 }
+
 .back-link:hover {
   text-decoration: underline;
+  color: #1a5a5b;
+}
+
+@media (max-width: 768px) {
+  .blog-detail-header {
+    height: 250px;
+  }
+
+  .blog-detail-header-overlay h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-detail {
+    padding: 30px 20px;
+  }
 }

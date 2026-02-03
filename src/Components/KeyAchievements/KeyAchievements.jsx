@@ -1,7 +1,9 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import './KeyAchievements.css';
 
 const KeyAchievements = () => {
+  const navigate = useNavigate();
   return (
     <section className="achievements-wrapper">
       <div className="container-left">
@@ -10,7 +12,7 @@ const KeyAchievements = () => {
           Analyzing the impact of our efforts: a detailed look at the key metrics
           driving our environmental achievements.
         </p>
-        <button className="more-btn">More information</button>
+        <button className="more-btn" onClick={() => navigate('/about-us')}>More information</button>
       </div>
 
       <div className="container-right">
@@ -44,7 +46,7 @@ const KeyAchievements = () => {
 
       {/* Duplicate button for mobile, hidden on desktop */}
       <div className="more-btn-mobile">
-        <button className="more-btn">More information</button>
+        <button className="more-btn" onClick={() => navigate('/about-us')}>More information</button>
       </div>
     </section>
   );

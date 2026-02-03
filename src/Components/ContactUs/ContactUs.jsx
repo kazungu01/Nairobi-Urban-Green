@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import Swal from "sweetalert2";
 import caller_image from '../../assets/caller-image.jpg'
 
 const ContactUs = () => {
@@ -20,10 +21,22 @@ const ContactUs = () => {
     const data = await response.json();
 
     if (data.success) {
-      setResult("Message sent successfully!");
+      Swal.fire({
+        icon: 'success',
+        title: 'Success!',
+        text: 'Your message has been sent successfully!',
+        confirmButtonColor: '#28a745'
+      });
       event.target.reset();
+      setResult("");
     } else {
       console.log("Error", data);
+      Swal.fire({
+        icon: 'error',
+        title: 'Error',
+        text: data.message || 'Failed to send message. Please try again.',
+        confirmButtonColor: '#dc3545'
+      });
       setResult(data.message);
     }
   };
