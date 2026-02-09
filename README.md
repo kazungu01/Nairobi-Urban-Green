@@ -1,10 +1,12 @@
-**Nairobi Urban Green – Frontend**
-Nairobi Urban Green is a community driven platform focused on promoting urban farming, sustainability, and education within Nairobi.
-This frontend is built using React, designed to be fast, responsive, and easy to integrate with a Rails backend API.
+Nairobi Urban Green – Frontend 🌱
 
-**Features**
+Nairobi Urban Green is a community-driven platform focused on promoting urban farming, sustainability, and education within Nairobi.
 
-Beautiful, responsive UI for all pages
+This repository contains the frontend application, built with React and Vite, designed to be fast, responsive, and easy to integrate with a Rails backend API.
+
+✨ Features
+
+Beautiful and responsive UI across all pages
 
 Blog listing page
 
@@ -14,70 +16,77 @@ Donate page with pledge form
 
 About Us and Contact pages
 
+Gallery showcasing farm and community activities
+
 Mobile navigation menu with sticky navbar
 
-Clean component-based structure
+Clean, component-based architecture
 
-Connects seamlessly to the Rails backend API
+Seamless integration with a Rails backend API
 
-**Tech Stack**
+🛠 Tech Stack
+
 React
 
 Vite
 
 React Router
 
-CSS Modules / Global CSS
+CSS (Global CSS / Modules)
 
-Axios (for communicating with the backend API)
+Axios for API communication
 
-**Folder Structure**
+📁 Folder Structure
 src/
- ├── assets/                # Images, logos, static files
- ├── components/            # Reusable UI components
- │     ├── Navbar/
- │     ├── Footer/
- │     └── BlogCard/
- ├── pages/                 # Each frontend page
- │     ├── Home/
- │     ├── Blog/
- │     ├── BlogDetails/
- │     ├── Donate/
- │     ├── About/
- │     └── Contact/
- ├── App.jsx                # Main routing file
- └── main.jsx               # Vite entry point
+├── assets/        # Images, logos, static files
+├── components/    # Reusable UI components
+│   ├── Navbar/
+│   ├── Footer/
+│   └── BlogCard/
+├── pages/         # Application pages
+│   ├── Home/
+│   ├── Blog/
+│   ├── BlogDetails/
+│   ├── Donate/
+│   ├── Gallery/
+│   ├── About/
+│   └── Contact/
+├── services/      # API service files
+├── App.jsx        # Main routing file
+└── main.jsx       # Vite entry point
 
-**Installation and Setup**
-1. Clone the repository
+🚀 Installation & Setup
+Clone the repository
 git clone https://github.com/kazungu01/Nairobi-Urban-Green-Frontend.git
 cd Nairobi-Urban-Green-Frontend
 
-2. Install dependencies
+Install dependencies
 npm install
 
-3. Start the development server
+Start the development server
 npm run dev
 
 
-The app will run on:
+The app will run at:
 
 http://localhost:5173
 
-Connecting to the Backend (Rails API)
+🔌 Connecting to the Backend (Rails API)
 
-This project interacts with the Nairobi Urban Green backend built using Rails.
+This frontend is designed to work with a Rails backend API.
 
-Set your backend URL inside an environment file.
+Set your backend URL in an environment file:
 
-**Available Pages**
+VITE_API_URL=http://localhost:3000
+
+📄 Available Pages
 Home
 
 Overview of Nairobi Urban Green and featured sections.
 
 Blog
 
-Displays all blog posts from the backend.
+Displays all blog posts.
 
 Blog Details
 
@@ -85,41 +94,47 @@ Shows a full blog article including images.
 
 Donate
 
-Contains a pledge form styled with a clean layout.
+Donation pledge form with a clean, responsive layout.
 
 Gallery
 
-Displays farm images and community activities.
+Visual showcase of farm work and community activities.
 
 About Us
 
-Mission, vision, and org story.
+Mission, vision, and organization story.
 
 Contact
 
-Contact form and contact details.
+Contact form and organization contact details.
 
-**Running a Production Build**
+📦 Production Build
+
+To create a production build:
+
 npm run build
 
 
-Output files will be created in the dist/ folder.
+Output files will be generated in the dist/ folder.
 
-To preview production build:
+To preview the production build:
 
 npm run preview
 
-**Contributing**
+🤝 Contributing
 
-Pull requests are welcome.
-If you want to contribute:
+Contributions are welcome.
 
-Fork the repo
+Fork the repository
 
 Create a feature branch
 
+Commit your changes
+
 Submit a pull request
 
-**License**
+📜 License
 
-This project is licensed under the MIT License.
+The source code is licensed under the MIT License.
+
+All images, text content, and branding related to Nairobi Urban Green are © Nairobi Urban Green and may not be reused without permission.
