@@ -5,7 +5,8 @@
 /* ===== Header Image (SLIGHTLY REDUCED) ===== */
 .blog-detail-header {
   position: relative;
-  width: 100%;
+  width: 85%;
+  margin-left: 5%;
   height: 400px;
   overflow: hidden;
 }

@@ -53,7 +53,7 @@
 
 .mission-vision-approach {
   background-color: #2e5c1e;
-  width:150%;
+  width: 150%;
   margin-left: -25%;
   padding: 60px 10%;
   text-align: center;
@@ -400,8 +400,10 @@
     font-size: 1rem;
   }
 
+  /* ONLY CHANGE: about-body becomes ~85% width on mobile */
   .about-body {
-    width: 100%;
+    width: 85%;
+    margin: 30px auto;
   }
 
   .about-body h2 {

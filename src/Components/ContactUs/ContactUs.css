@@ -1,60 +1,59 @@
 * {
-      font-family: Arial, sans-serif;  
+  font-family: Arial, sans-serif;
 }
 
-.contact-container{
-    display: flex;
-    gap: 50px;
-    width: 80%;
-    margin-left: 10%;
-    /* background-color: #fff; */
+.contact-container {
+  display: flex;
+  gap: 50px;
+  width: 80%;
+  margin-left: 10%;
+  /* background-color: #fff; */
 }
+
 .contact-container-left {
   width: 50%;
   margin: 40px auto;
   text-align: left;
 }
 
-.contact-container-right{
-      width: 50%;
-      margin: 70px auto;
-      text-align: center;
+.contact-container-right {
+  width: 50%;
+  margin: 70px auto;
+  text-align: center;
 }
 
-.contact-banner{
-    padding: 50px;
-    margin-top: 5%;
-    background-image: url('../../assets/summer-field.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    /* opacity: 0.6; */
-    text-align: center;
-    height: 200px;
-    /* color: #fff; */
+.contact-banner {
+  padding: 50px;
+  margin-top: 5%;
+  background-image: url('../../assets/summer-field.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+  height: 200px;
+  /* color: #fff; */
 }
 
 .contact-container-left h3 {
   margin-bottom: 20px;
   text-align: center;
-  /* font-size: 16px; */
   line-height: 1.5;
 }
 
-.contact-container-left h3, .contact-container-right h1{
-margin-bottom: 20px;
-color: #3F6F4F   ;
-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+.contact-container-left h3,
+.contact-container-right h1 {
+  margin-bottom: 20px;
+  color: #3F6F4F;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
 }
 
-.contact-container-right p{
-    line-height: 27px;
+.contact-container-right p {
+  line-height: 27px;
 }
 
-.contact-container-right img{
-    width: 25%;
-    /* height: 35%; */
-    border-radius: 20%;
+.contact-container-right img {
+  width: 25%;
+  border-radius: 20%;
 }
 
 .contact-form {
@@ -111,4 +110,75 @@ textarea:focus {
 
 .submit-btn:hover {
   background-color: #234718;
+}
+
+/* ===== Tablet and Mobile Fix ===== */
+@media (max-width: 1024px) {
+  .contact-container {
+    flex-direction: column;
+    width: 92%;
+    margin-left: 4%;
+    gap: 25px;
+  }
+
+  /* Right section first */
+  .contact-container-right {
+    width: 100%;
+    margin: 30px auto 0 auto;
+    order: 1;
+    text-align: center;
+  }
+
+  /* Form section goes below */
+  .contact-container-left {
+    width: 100%;
+    margin: 0 auto 30px auto;
+    order: 2;
+  }
+
+  .contact-container-right img {
+    width: 120px;
+    border-radius: 20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-banner {
+    padding: 30px 15px;
+    height: 160px;
+    margin-top: 15%;
+  }
+
+  .contact-container-left h3 {
+    font-size: 14px;
+  }
+
+  .contact-container-right h1 {
+    font-size: 1.5rem;
+  }
+
+  .contact-container-right p {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  label {
+    font-size: 13px;
+  }
+
+  input,
+  textarea {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
 }
